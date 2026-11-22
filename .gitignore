@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Nextflow
+work/
+.nextflow/
+.nextflow.log*
+
+# Raw sequencing data
+data/raw/
+*.fastq
+*.fastq.gz
+*.bam
+*.bai
+
+# Intermediate analysis outputs
+results/intermediate/
+
+# R
+.Rhistory
+.RData
+.Rproj.user/
+
+# Operating system and editor files
+.DS_Store
+Thumbs.db
+.vscode/
