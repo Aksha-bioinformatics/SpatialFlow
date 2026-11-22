@@ -128,3 +128,43 @@ analysis results will be recorded as completed project steps.
 - Install and verify Scanpy and Squidpy.
 - Select a suitable public spatial transcriptomics dataset.
 - Develop and test the Nextflow workflow.
+
+## 2026-11-22 — Python Environment and Spatial Analysis Libraries
+
+### Virtual Environment
+- Created a Python virtual environment in the project directory:
+  .venv/
+- Python version: 3.12.3
+- pip version: 26.3
+- Activated the environment before installing packages.
+
+### Core Python Packages
+- Scanpy: 1.12.6
+- Squidpy: 1.8.4
+- AnnData: 0.13.4
+- NumPy: 2.5.5
+- SciPy: 1.18.1
+- pandas: 3.1.1
+- scikit-learn: 1.9.1
+
+### Installation and Verification
+- Installed Scanpy and Squidpy using:
+  python -m pip install "scanpy==1.12.6" "squidpy==1.8.4"
+- Verified imports of Scanpy, Squidpy and AnnData successfully.
+- Checked installed dependency consistency using:
+  python -m pip check
+- Result: No broken requirements found.
+
+### Dependency Files
+- Created requirements.txt with pinned direct dependencies.
+- Created requirements-lock.txt using:
+  python -m pip freeze
+- The .venv directory remains excluded from Git through .gitignore.
+
+### Current Project Status
+- Ubuntu 24.04 environment configured.
+- Java and Nextflow installed and verified.
+- Python virtual environment configured.
+- Scanpy, Squidpy and AnnData installed and verified.
+- Dataset selection and documentation pending.
+- SpatialFlow analysis workflow development pending.

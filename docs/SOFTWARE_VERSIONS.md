@@ -17,23 +17,39 @@
 - Environment: Windows Subsystem for Linux 2 (WSL2)
 - Git: 2.43.0
 - Python: 3.12.3
+- pip: 26.3
 - Java: OpenJDK 21.0.13.1
 - Nextflow: 26.10.7, build 15252
+- Scanpy: 1.12.6
+- Squidpy: 1.8.4
+- AnnData: 0.13.4
+- NumPy: 2.5.5
+- SciPy: 1.18.1
+- pandas: 3.1.1
+- scikit-learn: 1.9.1
 - CPU cores visible to WSL: 12
 - RAM visible to WSL: 3.7 GiB
 - Available RAM at assessment: 3.3 GiB
 - Swap: 1.0 GiB
 
+## Python Environment
+- Virtual environment: `.venv`
+- Direct dependencies: `requirements.txt`
+- Complete installed package snapshot: `requirements-lock.txt`
+- Scanpy, Squidpy and AnnData imports verified successfully.
+- Dependency consistency checked using `python -m pip check`.
+- Result: No broken requirements found.
+
 ## Verification
-- Java verified using: java -version
-- Nextflow verified using: nextflow -version
-- Nextflow execution tested using: nextflow run hello
+- Java verified using: `java -version`
+- Nextflow verified using: `nextflow -version`
+- Nextflow execution tested using: `nextflow run hello`
 - Hello workflow result: 4 of 4 tasks completed successfully.
+- Python package imports tested successfully.
+- Python dependencies verified using: `python -m pip check`
 
 ## Pending Software
-- Python virtual environment
-- Scanpy
-- Squidpy
+- None of the currently listed core environment components.
 
 ## Resource Considerations
 - WSL exposes approximately 3.7 GiB RAM.
