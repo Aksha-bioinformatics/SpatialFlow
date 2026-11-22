@@ -88,3 +88,43 @@ analysis results will be recorded as completed project steps.
 - Install and verify Scanpy and Squidpy.
 - Select a public spatial transcriptomics dataset.
 - Develop the SpatialFlow Nextflow workflow.
+
+## 2026-11-22 — Migration to Ubuntu 24.04 and Nextflow Setup
+
+### Migration
+- Installed Ubuntu 24.04.5 LTS as a separate WSL2 distribution.
+- Preserved the existing Ubuntu 20.04 distribution.
+- Exported an Ubuntu 20.04 backup to:
+  C:\Users\abdul\Ubuntu-20.04-backup.tar
+- Backup export completed successfully.
+- Ubuntu 24.04 is the active development environment.
+
+### Active Environment
+- OS: Ubuntu 24.04.5 LTS
+- Git: 2.43.0
+- Python: 3.12.3
+- Java: OpenJDK 21.0.13.1
+- Nextflow: 26.10.7 (build 15252)
+- CPU cores visible to WSL: 12
+- RAM visible to WSL: 3.7 GiB
+- Available RAM at verification: 3.3 GiB
+- Swap: 1.0 GiB
+
+### Nextflow Installation and Test
+- Installed Nextflow using the official installation script.
+- Executable location: ~/.local/bin/nextflow
+- Added ~/.local/bin to PATH through ~/.bashrc.
+- Verified the installation using: nextflow -version
+- Test command: nextflow run hello
+- Test repository: nextflow-io/hello
+- Revision: 3c2cdc9823
+- Executor: local
+- Result: 4 of 4 tasks completed successfully.
+- Output included Ciao, Hola, Hello, and Bonjour world.
+
+### Pending Work
+- Clone the SpatialFlow repository into Ubuntu 24.04.
+- Configure a Python virtual environment.
+- Install and verify Scanpy and Squidpy.
+- Select a suitable public spatial transcriptomics dataset.
+- Develop and test the Nextflow workflow.
